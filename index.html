@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades del Semestre - Universidad Distrital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <!-- Header con título y controles -->
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <div class="logo">
+                    <i class="fas fa-university"></i>
+                    <div class="logo-text">
+                        <h1>Actividades del Semestre</h1>
+                        <p>Universidad Distrital Francisco José de Caldas</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <span>Modo Noche</span>
+                    </button>
+                    <button id="menu-toggle" class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav id="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link active"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#actividades" class="nav-link"><i class="fas fa-file-pdf"></i> Actividades PDF</a></li>
+                <li><a href="#videos" class="nav-link"><i class="fas fa-video"></i> Videos</a></li>
+                <li><a href="#recursos" class="nav-link"><i class="fas fa-external-link-alt"></i> Recursos</a></li>
+                <li><a href="#contacto" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li><a href="#galeria" class="nav-link"><i class="fas fa-images"></i> Galería</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Botón flotante para subir -->
+    <button id="scroll-top" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <main class="container">
+        <!-- Sección Inicio con carrusel grande -->
+        <section id="inicio" class="section active-section">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h2><i class="fas fa-graduation-cap"></i> Bienvenido al Portal Académico</h2>
+                    <p class="hero-text">Explora todas las actividades realizadas durante el semestre en la Universidad Distrital. Navega por las diferentes secciones para acceder a materiales, videos y recursos compartidos.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <i class="fas fa-file-pdf"></i>
+                            <h3>3</h3>
+                            <p>Actividades PDF</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-video"></i>
+                            <h3>2</h3>
+                            <p>Videos Educativos</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-link"></i>
+                            <h3>2</h3>
+                            <p>Recursos Web</p>
+                        </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carrusel mejorado más grande -->
+            <div class="carrusel-section">
+                <div class="section-header">
+                    <h3><i class="fas fa-images"></i> Galería Universitaria</h3>
+                    <div class="carrusel-controls">
+                        <button class="carrusel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                        <span class="slide-counter">1 / 5</span>
+                        <button class="carrusel-btn next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                
+                <div class="carrusel-container-large">
+                    <div class="carrusel-track-large">
+                        <div class="carrusel-slide-large">
+                            <img src="/imagenes/img1.jpg" alt="Universidad 1" onerror="this.src='https://images.unsplash.com/photo-1562774053-701939374585?w=1200&h=600&fit=crop'">
+                            <div class="carrusel-overlay">
+                                <div class="carrusel-caption">
+                                    <h4>Campus Principal</h4>
+                                    <p>El corazón académico de nuestra universidad</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrusel-slide-large">
+                            <img src="/imagenes/img4.jpg" alt="Universidad 2" onerror="this.src='https://images.unsplash.com/photo-1589998059171-988d887df646?w=1200&h=600&fit=crop'">
+                            <div class="carrusel-overlay">
+                                <div class="carrusel-caption">
+                                    <h4>Biblioteca Central</h4>
+                                    <p>Centro de conocimiento e investigación</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrusel-slide-large">
+                            <img src="/imagenes/img3.jpg" alt="Universidad 3" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=600&fit=crop'">
+                            <div class="carrusel-overlay">
+                                <div class="carrusel-caption">
+                                    <h4>Laboratorio de Tecnología</h4>
+                                    <p>Innovación y desarrollo tecnológico</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrusel-slide-large">
+                            <img src="/imagenes/img5.jpg" alt="Universidad 4" onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&h=600&fit=crop'">
+                            <div class="carrusel-overlay">
+                                <div class="carrusel-caption">
+                                    <h4>Área de Estudio</h4>
+                                    <p>Espacios diseñados para el aprendizaje</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrusel-slide-large">
+                            <img src="/imagenes/img6.jpg" alt="Universidad 5" onerror="this.src='https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200&h=600&fit=crop'">
+                            <div class="carrusel-overlay">
+                                <div class="carrusel-caption">
+                                    <h4>Eventos Universitarios</h4>
+                                    <p>Cultura y comunidad estudiantil</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carrusel-indicators-large">
+                    <span class="indicator-large active" data-slide="0"></span>
+                    <span class="indicator-large" data-slide="1"></span>
+                    <span class="indicator-large" data-slide="2"></span>
+                    <span class="indicator-large" data-slide="3"></span>
+                    <span class="indicator-large" data-slide="4"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Actividades PDF -->
+        <section id="actividades" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-file-pdf"></i> Actividades del Semestre</h2>
+                <p>Documentos académicos en formato PDF disponibles para visualización y descarga</p>
+            </div>
+            
+            <div class="pdf-grid">
+                <div class="pdf-card">
+                    <div class="pdf-header">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Actividad 1: Introducción a la Tecnología</h3>
+                            <p class="pdf-meta">Tecnología • 5 páginas • 2.5 KB</p>
+                        </div>
+                    </div>
+                    <p>Conceptos básicos de tecnología y su aplicación en la vida diaria. Análisis de herramientas tecnológicas contemporáneas.</p>
+                    
+                    <div class="pdf-preview">
+                        <iframe src="/pdf/ABEJAS.pdf" width="100%" height="400px"></iframe>
+                    </div>
+                    
+                    <div class="pdf-actions">
+                        <a href="/pdf/ABEJAS.pdf" download class="btn btn-download">
+                            <i class="fas fa-download"></i> Descargar PDF
+                        </a>
+                        <a href="/pdf/ABEJAS.pdf" target="_blank" class="btn btn-view">
+                            <i class="fas fa-external-link-alt"></i> Ver en Nueva Pestaña
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-header">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Actividad 2: Desarrollo Web Moderno</h3>
+                            <p class="pdf-meta">Programación • 1 página • 3.4 KB</p>
+                        </div>
+                    </div>
+                    <p>Fundamentos de HTML, CSS y JavaScript para desarrollo web. Incluye ejercicios prácticos y proyectos.</p>
+                    
+                    <div class="pdf-preview">
+                        <iframe src="/pdf/Inteligncia Artificial en la Educación.pdf" width="100%" height="400px"></iframe>
+                    </div>
+                    
+                    <div class="pdf-actions">
+                        <a href="/pdf/Inteligncia Artificial en la Educación.pdf" download class="btn btn-download">
+                            <i class="fas fa-download"></i> Descargar PDF
+                        </a>
+                        <a href="/pdf/Inteligncia Artificial en la Educación.pdf" target="_blank" class="btn btn-view">
+                            <i class="fas fa-external-link-alt"></i> Ver en Nueva Pestaña
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-header">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Actividad 3: Proyecto Final</h3>
+                            <p class="pdf-meta">Proyecto • 1 página • 5.2 MB</p>
+                        </div>
+                    </div>
+                    <p>Desarrollo de un proyecto completo aplicando todos los conocimientos adquiridos durante el semestre.</p>
+                    
+                    <div class="pdf-preview">
+                        <iframe src="/pdf/Nativos e Inmigrantes Digitales.pdf" width="100%" height="400px"></iframe>
+                    </div>
+                    
+                    <div class="pdf-actions">
+                        <a href="/pdf/Nativos e Inmigrantes Digitales.pdf" download class="btn btn-download">
+                            <i class="fas fa-download"></i> Descargar PDF
+                        </a>
+                        <a href="/pdf/Nativos e Inmigrantes Digitales.pdf" target="_blank" class="btn btn-view">
+                            <i class="fas fa-external-link-alt"></i> Ver en Nueva Pestaña
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Videos -->
+        <section id="videos" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-play-circle"></i> Videos Educativos</h2>
+                <p>Contenido audiovisual que complementa las actividades del semestre</p>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>El Futuro de la Tecnología</h3>
+                    </div>
+                    <div class="video-container">
+                        <div class="video-wrapper">
+                            <!-- Video local o embed -->
+                            <div class="video-player">
+                                <!-- Para video local -->
+                                <video controls poster="/imagenes/video-thumb1.jpg">
+                                    <source src="/videos/Cómo China está tomando la delantera tecnológica a nivel global _ BBC Mundo.mp4" type="video/mp4">
+                                    <source src="/videos/videoplayback (1).weba" type="video/webm">
+                                    Tu navegador no soporta la reproducción de videos.
+                                </video>
+                                <!-- Alternativa YouTube embed -->
+                                <!-- <iframe src="https://www.youtube.com/embed/jU6qSf-EsIE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <p><strong>Duración:</strong> 7:50 min</p>
+                        <p><strong>Temas:</strong> China, Blockchain, IoT, Realidad Aumentada</p>
+                        <p>Un análisis profundo sobre las tendencias tecnológicas que definirán nuestro futuro en los próximos años.</p>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Inteligencia Artificial en la Educación</h3>
+                    </div>
+                    <div class="video-container">
+                        <div class="video-wrapper">
+                            <!-- Video local o embed -->
+                            <div class="video-player">
+                                <!-- Para video local -->
+                                <video controls poster="/imagenes/video-thumb2.jpg">
+                                    <source src="/videos/videoplayback.mp4" type="video/mp4">
+                                    <source src="/videos/videoplayback.weba" type="video/webm">
+                                    Tu navegador no soporta la reproducción de videos.
+                                </video>
+                                <!-- Alternativa YouTube embed -->
+                                <!-- <iframe src="https://www.youtube.com/embed/9N1iYDHRZ14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <p><strong>Duración:</strong> 5:13 min</p>
+                        <p><strong>Temas:</strong> Machine Learning, Educación Personalizada, Herramientas IA</p>
+                        <p>Cómo la IA está transformando los métodos de enseñanza y aprendizaje en instituciones educativas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Recursos -->
+        <section id="recursos" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-external-link-alt"></i> Recursos Adicionales</h2>
+                <p>Enlaces a páginas web con información relevante para complementar las actividades</p>
+            </div>
+            
+            <div class="links-grid">
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3>Rompecabezas</h3>
+                        <p>Documentación completa y actualizada sobre la actividad del rompecabezas</p>
+                        <div class="link-tags">
+                            <span class="tag">Norbit</span>
+                            <span class="tag">Puzzle</span>
+                            <span class="tag">JigsawPlanet</span>
+                        </div>
+                        <a href="https://www.jigsawplanet.com/?rc=play&pid=32f5f390d6db" target="_blank" class="btn btn-link">
+                            <i class="fas fa-external-link-alt"></i> Visitar Sitio
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3>Voki</h3>
+                        <p>Plataforma gratuita para crear avatares animados que pueden ser personalizados y utilizados para comunicarse de forma divertida y atractiva, especialmente en entornos educativos.</p>
+                        <div class="link-tags">
+                            <span class="tag">Animaciob</span>
+                            <span class="tag">Gratis</span>
+                            <span class="tag">Proyectos</span>
+                        </div>
+                        <a href="https://tinyurl.com/2662d5z5" target="_blank" class="btn btn-link">
+                            <i class="fas fa-external-link-alt"></i> Visitar Sitio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Galería adicional -->
+        <section id="galeria" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-images"></i> Galería de Proyectos</h2>
+                <p>Imágenes adicionales de proyectos y actividades universitarias</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/imagenes/img7.jpg" alt="Proyecto 1" onerror="this.src='https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=400&h=300&fit=crop'">
+                    <div class="gallery-overlay">
+                        <h4>Exposición de Proyectos</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/imagenes/img8.jpg" alt="Proyecto 2" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop'">
+                    <div class="gallery-overlay">
+                        <h4>Laboratorio de Robótica</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/imagenes/img9.jpg" alt="Proyecto 3" onerror="this.src='https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=400&h=300&fit=crop'">
+                    <div class="gallery-overlay">
+                        <h4>Workshop de Desarrollo</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-envelope"></i> Contacto</h2>
+                <p>Comunícate con nosotros para más información sobre las actividades</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3><i class="fas fa-info-circle"></i> Información de Contacto</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <strong>Estudiante:</strong>
+                                <p>Karen Natalia Contreras Fierro</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>Semestre:</strong>
+                                <p>Primero</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <strong>Universidad:</strong>
+                                <p>Universidad Distrital Francisco José de Caldas</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong>
+                                <p>karcontreras.jau@udca.edu.co</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <strong>Horario de Contacto:</strong>
+                                <p>Lunes a Viernes, 8:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3><i class="fas fa-paper-plane"></i> Envíanos un mensaje</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Nombre Completo:</label>
+                            <input type="text" id="name" placeholder="Ingresa tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico:</label>
+                            <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject"><i class="fas fa-tag"></i> Asunto:</label>
+                            <select id="subject" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="actividades">Consulta sobre actividades</option>
+                                <option value="recursos">Información sobre recursos</option>
+                                <option value="tecnico">Problema técnico</option>
+                                <option value="general">Consulta general</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Mensaje:</label>
+                            <textarea id="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-university"></i>
+                    <div>
+                        <h4>Universidad Distrital</h4>
+                        <p>Francisco José de Caldas</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#actividades">Actividades PDF</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#recursos">Recursos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h5>Síguenos</h5>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Portal de Actividades Académicas - Universidad Distrital FJC. Todos los derechos reservados.</p>
+                <p class="credits">Desarrollado por Karen Natalia Contreras Fierro</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
